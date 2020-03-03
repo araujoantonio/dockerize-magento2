@@ -41,7 +41,7 @@ services:
     image: alpine:latest
     volumes:
       - ./config/appdata/startup.sh:/startup.sh
-      - .:/var/www/html
+      - ../:/var/www/html
     command: /bin/sh /startup.sh
 
 
